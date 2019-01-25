@@ -1,0 +1,194 @@
+#backtotop{
+    z-index:999; display:inline-block;
+    position:fixed;
+    bottom:80px; right:20px;
+    width:36px; height:36px;
+    line-height:36px; font-size:16px;
+    text-align:center; opacity:.2;
+}
+
+  #backtotop i{
+    display:block; width:100%;
+    height:100%; line-height:inherit;
+  }
+
+#backtotop:hover{opacity:1;}
+
+#fond{
+	z-index: 99999;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color:rgba(0,0,0,.7);
+	width: 100%;
+	height: 100%;
+}
+
+.no{
+	overflow: hidden;
+}
+::-webkit-scrollbar{
+	width: 8px;
+}
+::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+	background-color: #ccc;
+}
+/*#loader{
+    background-image: url(../img/loader1.gif);
+    background-size: cover;
+    z-index: 999999;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 300px;
+}*/
+/*@import url(https://fonts.googleapis.com/css?family=finger+paint);*/
+a{
+    text-decoration: none;
+    outline: none;
+}
+.foot{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background-color: #272727;
+    padding: 20px 0px;
+}
+.icons{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+.icons ul{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.icons ul li{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0px 10px;
+    border-radius: 100%;
+    background-color: rgba(7, 78, 18, 1);
+}
+.icons ul li a{
+    font-size: 25px;
+    color: #fff;
+}
+.icons ul li a i{
+    line-height: 50px;
+}
+.menu{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+}
+.menu ul{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.menu ul li{
+    display: inline-block;
+    margin: 0px 20px;
+}
+.menu ul li a{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+}
+.bottom{
+    padding: 5px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(7, 78, 18, 1);
+}
+
+/*SMOKE*/
+.smoke{
+    overflow: hidden;
+    font: 5vw/100vh "Finger Paint";
+    text-align: center;
+    color: transparent;
+    backface-visibility: hidden;
+}
+.smoky{
+    display: inline-block;
+    text-shadow: 0 0 0 whitesmoke;
+    animation: smoke 5s 3s both;
+}
+.smoky:nth-child(even){
+    animation-name: smoky-mirror;
+}
+
+@-webkit-keyframes smoke{
+    60%{
+        text-shadow: 0 0 40px whitesmoke;
+    }
+    to{
+        transform: translate3d(15rem, -8rem, 0) rotate(-40deg) skewX(70deg ) scale(1.5);
+        text-shadow: 0 0 20px whitesmoke;
+        opacity: 0;
+    }
+
+}
+@-webkit-keyframes smoky-mirror{
+    60%{
+        text-shadow: 0 0 40px whitesmoke;
+    }
+    to{
+        transform: translate3d(18rem, -8rem, 0) rotate(-40deg) skewX(-70deg ) scale(2);
+        text-shadow: 0 0 20px whitesmoke;
+        opacity: 0;
+    }
+}
+.smoky:nth-child(1){
+    animation-delay: 1s;
+}
+.smoky:nth-child(2){
+    animation-delay: 1s;
+}
+.smoky:nth-child(3){
+    animation-delay: 1s;
+}
+.smoky:nth-child(4){
+    animation-delay: 1s;
+}
+.smoky:nth-child(5){
+    animation-delay: 1s;
+}
+.smoky:nth-child(6){
+    animation-delay: 1s;
+}
+.smoky:nth-child(7){
+    animation-delay: 1s;
+}
+.smoky:nth-child(8){
+    animation-delay: 1s;
+}
+.smoky:nth-child(9){
+    animation-delay: 1s;
+}
+.intro{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url(../media/img/environnement_800x400.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px;
+    color: #fff;
+}
+.intro p{
+    font-size: 20px;
+}
